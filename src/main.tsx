@@ -1,10 +1,11 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Container, createRoot } from "react-dom/client";
 import CssBaseline from "@mui/material/CssBaseline";
+import { Route } from "./routes/index";
 import { StrictMode } from "react";
-import {Route} from "./routes/index";
 
-import "./index.scss";
+import "./style/index.scss";
+import "./style/tailwind.css";
 
 function App() {
   const theme = createTheme({

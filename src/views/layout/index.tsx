@@ -18,7 +18,7 @@ export default function Layout() {
   return (
     <Box>
       <Header />
-      <Box sx={{ p: 3 }}>
+      <Box sx={{ p: 2 }}>
         <Outlet />
       </Box>
     </Box>
