@@ -1,0 +1,53 @@
+// #121212
+
+// Tema claro
+.light {
+  --background-primary: #fff;
+  --background-secondary: #f3f4f6;
+  --primary: #2563eb;
+  --secondary: #9333ea;
+  --color: #000;
+  --alert: #dc2626;
+  --warning: #f59e0b;
+}
+
+// Tema escuro
+.dark {
+  --background-primary: #242424;
+  --background-secondary: #1f2937;
+  --primary: #3b82f6;
+  --secondary: #a855f7;
+  --color: #fff;
+  --alert: #ef4444;
+  --warning: #fbbf24;
+}
+
+// Usando variáveis
+body {
+  background-color: var(--background-primary);
+  color: var(--color);
+}
+
+.container {
+  background-color: var(--background-secondary);
+}
+
+.button-primary {
+  background-color: var(--primary);
+  color: var(--color);
+}
+
+.button-secondary {
+  background-color: var(--secondary);
+  color: var(--color);
+}
+
+.alert {
+  background-color: var(--alert);
+  color: var(--color);
+}
+
+.warning {
+  background-color: var(--warning);
+  color: var(--color);
+}
