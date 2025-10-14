@@ -1,5 +1,5 @@
 import { BrowserRouter, useRoutes } from "react-router-dom";
-import { routeList } from "./routeList";
+import { routeList } from "@/routes/routeList";
 
 function AppRoutes() {
   return useRoutes(routeList);

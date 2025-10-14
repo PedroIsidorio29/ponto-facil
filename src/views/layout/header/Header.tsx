@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "@/views/layout/header/Header";
 import {
   AppBar,
   Toolbar,
@@ -12,14 +12,13 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import { useColorScheme } from "@mui/material/styles";
-import { useState } from "react";
-
-import DehazeIcon from "@mui/icons-material/Dehaze";
-import Bedtime from "@mui/icons-material/Bedtime";
+import { ENUM_ROUTER, TRouter, viewLink } from "@/routes/enum";
 import Brightness from "@mui/icons-material/BrightnessHigh";
-import { ENUM_ROUTER, TRouter, viewLink } from "../../../routes/enum";
-import { useRedirect } from "../../../routes/utils";
+import { useColorScheme } from "@mui/material/styles";
+// import DehazeIcon from "@mui/icons-material/Dehaze";
+import Bedtime from "@mui/icons-material/Bedtime";
+import { useRedirect } from "@/routes/utils";
+import { useState } from "react";
 
 function Header() {
   const redirectTo = useRedirect();
@@ -63,11 +62,11 @@ function Header() {
     <AppBar position="static">
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box sx={{ display: "flex", gap: 2 }}>
-          <IconButton aria-label="delete" onClick={toggleDrawer(true)}>
+          {/* <IconButton aria-label="delete" onClick={toggleDrawer(true)}>
             <DehazeIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography variant="h6" component="div">
-            Controle de Ponto
+            Gerador de Folha de Ponta
           </Typography>
         </Box>
 

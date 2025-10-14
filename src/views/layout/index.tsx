@@ -1,19 +1,14 @@
-import { Navigate, Outlet, useLocation } from "react-router-dom";
-import { Box } from "@mui/material";
+import { Outlet, useNavigate } from "react-router-dom";
 import Header from "./header/Header";
-
-const isLoggedIn = () => true;
+import { Box } from "@mui/material";
+import { useEffect } from "react";
 
 export default function Layout() {
-  const loginPath = "/login";
-  const location = useLocation();
-  const logged = isLoggedIn();
+  const navigate = useNavigate();
 
-  if (!logged && location.pathname !== loginPath)
-    return <Navigate to={loginPath} replace />;
-
-  if (logged && location.pathname === loginPath)
-    return <Navigate to={"/home"} replace />;
+  useEffect(() => {
+    navigate("/home");
+  }, []);
 
   return (
     <Box>

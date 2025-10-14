@@ -1,15 +1,22 @@
-// #121212
-
-// Tema claro
-.light {
-  --background-primary: #fff;
-  --background-secondary: #f3f4f6;
-  --primary: #2563eb;
-  --secondary: #9333ea;
-  --color: #000;
-  --alert: #dc2626;
-  --warning: #f59e0b;
+:root{
+    --background-primary: #fff;
+    --background-secondary: #f3f4f6;
+    --primary: #2563eb;
+    --secondary: #9333ea;
+    --color: #000;
+    --alert: #dc2626;
+    --warning: #f59e0b;
 }
+// Tema claro
+// .light {
+//   --background-primary: #fff;
+//   --background-secondary: #f3f4f6;
+//   --primary: #2563eb;
+//   --secondary: #9333ea;
+//   --color: #000;
+//   --alert: #dc2626;
+//   --warning: #f59e0b;
+// }
 
 // Tema escuro
 .dark {

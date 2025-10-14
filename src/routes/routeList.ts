@@ -1,11 +1,9 @@
 import { RouteObject } from "react-router-dom";
-import { ENUM_ROUTER } from "./enum";
+import { ENUM_ROUTER } from "@/routes/enum";
 import React from "react";
 
-import Login from "../views/pages/auth/login/Login";
-import Layout from "../views/layout/index";
-import Home from "../views/pages/home/Home";
-import Controle from "../views/pages/controle/Controle";
+import Home from "@/views/pages/home/Home";
+import Layout from "@/views/layout/index";
 
 export type AppRouteObject = RouteObject & {
   name?: ENUM_ROUTER,
@@ -18,21 +16,10 @@ export const routeList: AppRouteObject[] = [
     element: React.createElement(Layout),
     children: [
       {
-        name: ENUM_ROUTER.LOGIN,
-        path: 'login',
-        element: React.createElement(Login),
-      },
-      {
         name: ENUM_ROUTER.HOME,
-        path: 'home',
+        path: 'home/',
         element: React.createElement(Home),
-      },
-      {
-        name: ENUM_ROUTER.CONTROLE,
-        path: 'controle',
-        element: React.createElement(Controle),
       },
     ],
   },
 ];
-

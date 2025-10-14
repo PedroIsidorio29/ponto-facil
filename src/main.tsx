@@ -1,16 +1,17 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Container, createRoot } from "react-dom/client";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Route } from "./routes/index";
+import { Route } from "@/routes/index";
 import { StrictMode } from "react";
+import "@/style/tailwind.css";
+import "@/style/index.scss";
 
-import "./style/index.scss";
-import "./style/tailwind.css";
 
 function App() {
   const theme = createTheme({
     colorSchemes: {
-      dark: true,
+      light: { palette: { mode: "light", primary: { main: "#019b18ff" } } },
+      dark: true
     },
   });
 
